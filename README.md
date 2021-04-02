@@ -28,14 +28,9 @@ Installation
 ------------
 
 ```bash
-$ wget http://getcomposer.org/composer.phar
-$ php composer.phar create-project sylius/sylius-standard project
-$ cd project
-$ yarn install
-$ yarn build
-$ php bin/console sylius:install
-$ php bin/console server:start
-$ open http://localhost:8000/
+$ git clone https://github.com/deck-app/sylius.git
+$ cd sylius
+$ docker-compose up -d
 ```
 
 Troubleshooting
