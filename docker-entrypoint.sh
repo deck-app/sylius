@@ -9,7 +9,7 @@ else
 git clone https://github.com/nabad600/sylius.git sylius
 cd /var/www/sylius/
 cp -a * /var/www/
-
+composer install
 echo "Download completed..."
 fi
 
