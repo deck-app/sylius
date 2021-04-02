@@ -32,6 +32,9 @@ $ git clone https://github.com/deck-app/sylius.git
 $ cd sylius
 $ docker-compose up -d
 ```
+```bash
+Note:- user & password:- sylius 
+```
 
 Troubleshooting
 ---------------

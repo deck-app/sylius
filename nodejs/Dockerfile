@@ -13,7 +13,7 @@ RUN set -eux; \
 	;
 
 # prevent the reinstallation of vendors at every changes in the source code
-# COPY package.json yarn.lock ./
+COPY package.json yarn.lock ./
 RUN set -eux; \
 	yarn install; \
 	yarn cache clean
@@ -25,7 +25,7 @@ RUN set -eux; \
 # COPY --from=sylius_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/gulpfile.babel.js vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/gulpfile.babel.js
 # COPY --from=sylius_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/gulpfile.babel.js vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/gulpfile.babel.js
 
-# COPY gulpfile.babel.js .babelrc ./
+COPY gulpfile.babel.js .babelrc ./
 # RUN set -eux; \
 # 	GULP_ENV=prod yarn build
 

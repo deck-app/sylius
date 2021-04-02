@@ -6,7 +6,10 @@ if [ -d "bin" ]; then
 echo "Git already exists"
 composer install
 else
-git clone https://github.com/nabad600/sylius.git .
+git clone https://github.com/nabad600/sylius.git sylius
+cd /var/www/sylius/
+cp -a * /var/www/
+
 echo "Download completed..."
 fi
 
